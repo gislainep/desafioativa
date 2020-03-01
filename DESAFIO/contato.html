@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ativa - Desafio</title>
+    <link rel="icon" type="imagem/png" href="./img/logotitle.png"/>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    
+  </head>
+  <body>
+   
+<!--  Modal   -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginTitulo" style="color: cornsilk;">Entre em sua conta</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" class="form-control" id="loginEmail">
+              </div>
+              <div class="form-group">
+                <label for="loginSenha">Senha</label>
+                <input type="password" class="form-control" id="loginSenha">
+              </div>
+              <button type="submit" class="btn btn-success">Entrar na Conta</button>
+              <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Fecha Modal  -->
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+      <a href="index.html" class="navbar-brand">
+        <img class="logo" src="img/logo.png" alt="">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success ml-md-2" href="cadastrar.html">Criar conta</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <section class="container">
+      <div class="my-5 text-center">
+        <div class="duvida">DEIXE AQUI SEU COMENTÁRIO!</div>
+      </div>
+      <div class="row">
+        <div class="col-lg mb-5">
+          <form name="form1" action="">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="nome" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+              </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="nome@email.com">
+            </div>
+            <div class="form-group">
+              <label for="telefone">Idade</label>
+              <input type="idade" class="form-control" id="idade" placeholder="xx" name="idade"/>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="telefone" class="form-control" id="foneid" name="fone" placeholder="(xx) xxxx-xxxx">
+              </small>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Deixe sua opinião</label>
+              <textarea id="mensagem" class="form-control" rows="4" name="mensagem" placeholder="Deixe sua opnião"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success" onclick="return validar();" value="Enviar" >enviar</button>
+          </form>
+        </div>
+        <div class="col-lg">
+          <h2 class="h6">NOSSO ENDEREÇO</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14690.663020454074!2d-43.3485704!3d-22.9993154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9a3fda225cee163!2sAtiva%20Investimentos!5e0!3m2!1spt-BR!2sbr!4v1582475145431!5m2!1spt-BR!2sbr" width="600" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></a>
+          <h2 class="h6">DADOS DE CONTATO</h2>
+          <ul class="list-unstyled text-secondary">
+            <li>ativa@ativainvestimentos.com.br</li>
+            <li>21 99999-9999</li>
+            <li>De Seg. à Sex. das 8h às 20h</li>
+          </ul>
+          
+          
+        </div>
+      </div>
+    </section>
+
+       <!-- RODAPE -->
+       <footer id="footer">
+     
+        <div class="footer-social">
+            <a href="https://www.facebook.com/ativainvestimentos" class="social-icons"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ativainvestimentos/" class="social-icons"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCZeA7EStWspozJBX-SaaVGg" class="social-icons"><i class="fa fa-youtube"></i></a>
+            <a href="https://twitter.com/ativacorretora" class="social-icons"><i class="fa fa-twitter"></i></a>
+        </div>
+    </footer>
+<!-- FIM RODAPÉ --> 
+    
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script language="javascript" type="text/javascript">
+
+      function validar() {
+      var nome = form1.nome.value;
+      var email = form1.email.value;
+      var idade = form1.idade.value;
+      var foneid = form1.fone.value;
+      var mensagem = form1.mensagem.value;
+      
+      if (nome == "") {
+      alert('Preencha o campo com seu nome');
+      form1.nome.focus();
+      return false;
+      }
+      
+      if (email == "") {
+      alert('Preencha o campo com seu email');
+      form1.email.focus();
+      return false;
+      }
+      
+      if (idade == "") {
+      alert('Preencha o campo com a idade');
+      form1.idade.focus();
+      return false;
+      }
+      
+      if (foneid == "") {
+      alert('Digite seu telefone!');
+      form1.foneid.focus();
+      return false;
+      }
+       
+      if (document.getElementById("mensagem").value == ""){
+                   alert("Deixe sua opinião");
+                   document.getElementById("mensagem").focus();
+               }
+               else {
+                   alert(document.getElementById("mensagem").value);
+               }
+            }
+            
+      </script>
+  </body>
+</html>
